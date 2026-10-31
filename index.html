@@ -5,10 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080808">
-
 <title>softcore — the neighbourhood</title>
-
-<meta name="description" content="Softcore, The Neighbourhood. Tradução em português e letra original em inglês.">
 
 <style>
 * {
@@ -24,7 +21,6 @@ body {
     background: #080808;
     color: #eeeeee;
     font-family: Arial, sans-serif;
-    font-weight: 400;
     padding: 50px 20px;
 }
 
@@ -36,7 +32,6 @@ body {
 header {
     text-align: center;
     margin-bottom: 55px;
-    animation: fadeIn 1.2s ease both;
 }
 
 header span {
@@ -49,7 +44,7 @@ h1 {
     font-size: 48px;
     font-weight: 400;
     letter-spacing: 5px;
-    margin: 18px 0 10px;
+    margin-bottom: 10px;
 }
 
 .artist {
@@ -59,19 +54,17 @@ h1 {
 }
 
 .lyrics {
-    border-top: 1px solid #292929;
     padding-top: 35px;
 }
 
 .verse {
     margin-bottom: 38px;
     text-align: center;
-    opacity: 0;
-    animation: appear 0.8s ease forwards;
 }
 
 .pt {
     font-size: 16px;
+    font-weight: 400;
     margin-bottom: 7px;
     line-height: 1.6;
     color: #eeeeee;
@@ -86,11 +79,10 @@ h1 {
 
 footer {
     text-align: center;
-    color: #777;
+    color: #555;
     font-size: 11px;
     margin-top: 70px;
-    padding: 30px 0 15px;
-    border-top: 1px solid #202020;
+    padding-top: 20px;
     letter-spacing: 1px;
 }
 
@@ -103,26 +95,8 @@ footer .name {
 
 footer .phrase {
     color: #666;
-    font-size: 11px;
     font-style: italic;
-    letter-spacing: 1px;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes appear {
-    to {
-        opacity: 1;
-    }
+    font-size: 11px;
 }
 
 @media (max-width: 600px) {
@@ -135,30 +109,18 @@ footer .phrase {
     }
 
     .pt {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .en {
-        font-size: 12px;
-    }
-
-    .verse {
-        margin-bottom: 34px;
+        font-size: 13px;
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation: none !important;
-        scroll-behavior: auto !important;
-        opacity: 1 !important;
-    }
-}
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
 <header>
@@ -167,7 +129,7 @@ footer .phrase {
     <div class="artist">HARD TO LOVE, HARD TO LEAVE.</div>
 </header>
 
-<main class="lyrics">
+<div class="lyrics">
 
 <div class="verse">
 <p class="pt">Você tem sido minha musa há muito tempo</p>
@@ -414,7 +376,7 @@ footer .phrase {
 <p class="en">Sharing my life</p>
 </div>
 
-</main>
+</div>
 
 <footer>
     <div class="name">Fernanda</div>
@@ -422,6 +384,5 @@ footer .phrase {
 </footer>
 
 </div>
-
 </body>
 </html>
