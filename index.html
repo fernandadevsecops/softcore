@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+
+  <title>Softcore — The Neighbourhood | Tradução</title>
+
+  <meta name="description" content="Tradução de Softcore, do The Neighbourhood. Português e inglês, verso por verso.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #080808;
+      color: #ededed;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+    }
+
+    ::selection {
+      background: #555;
+      color: white;
+    }
+
+    .container {
+      width: min(100% - 40px, 760px);
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 105px 0 75px;
+      animation: fadeIn 1.5s ease both;
+    }
+
+    .eyebrow {
+      color: #777;
+      font-size: 10px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(64px, 12vw, 108px);
+      font-weight: 400;
+      letter-spacing: 8px;
+      line-height: 1;
+      color: #f2f2f2;
+    }
+
+    .artist {
+      margin-top: 18px;
+      color: #777;
+      font-size: 11px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+
+    .header-line {
+      width: 45px;
+      height: 1px;
+      background: #444;
+      margin: 42px auto 0;
+    }
+
+    main {
+      padding-bottom: 80px;
+    }
+
+    .verse {
+      text-align: center;
+      padding: 34px 15px;
+      border-bottom: 1px solid #1d1d1d;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: rise 0.9s ease forwards;
+    }
+
+    .verse:nth-child(1) { animation-delay: .1s; }
+    .verse:nth-child(2) { animation-delay: .2s; }
+    .verse:nth-child(3) { animation-delay: .3s; }
+    .verse:nth-child(4) { animation-delay: .4s; }
+    .verse:nth-child(5) { animation-delay: .5s; }
+    .verse:nth-child(6) { animation-delay: .6s; }
+    .verse:nth-child(7) { animation-delay: .7s; }
+    .verse:nth-child(8) { animation-delay: .8s; }
+
+    .pt {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(21px, 4vw, 27px);
+      line-height: 1.5;
+      color: #e5e5e5;
+      font-weight: 500;
+    }
+
+    .en {
+      margin-top: 9px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #666;
+      letter-spacing: .3px;
+    }
+
+    .section-break {
+      text-align: center;
+      color: #555;
+      font-size: 10px;
+      letter-spacing: 5px;
+      padding: 55px 0 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 45px 20px 55px;
+      border-top: 1px solid #1d1d1d;
+    }
+
+    .signature {
+      color: #bdbdbd;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .signature span {
+      display: block;
+      margin-top: 7px;
+      color: #666;
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes rise {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 85px 0 55px;
+      }
+
+      h1 {
+        letter-spacing: 5px;
+      }
+
+      .verse {
+        padding: 27px 5px;
+      }
+
+      .en {
+        font-size: 11px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        scroll-behavior: auto !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <p class="eyebrow">A song, a feeling</p>
+
+      <h1>SOFTCORE</h1>
+
+      <p class="artist">The Neighbourhood</p>
+
+      <div class="header-line"></div>
+    </header>
+
+    <main>
+
+      <div class="verse">
+        <p class="pt">Você tem sido minha musa há muito tempo</p>
+        <p class="en">You've been my muse for a long time</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Você me faz suportar cada noite escura</p>
+        <p class="en">You get me through every dark night</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Estou sempre fora, em movimento</p>
+        <p class="en">I'm always gone, out on the go</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Estou em fuga e você está sozinha em casa</p>
+        <p class="en">I'm on the run and you're home alone</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Estou consumido demais com a minha própria vida</p>
+        <p class="en">I'm too consumed with my own life</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Somos jovens demais para isso?</p>
+        <p class="en">Are we too young for this?</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Sinto que não posso me mover</p>
+        <p class="en">Feels like I can't move</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando meu coração</p>
+        <p class="en">Sharing my heart</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Isso está acabando comigo</p>
+        <p class="en">It's tearing me apart</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Mas sei que sentiria sua falta, amor, se eu partisse agora mesmo</p>
+        <p class="en">But I know I'd miss you, baby, if I left right now</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Fazendo o que posso, tentando ser um homem</p>
+        <p class="en">Doing what I can, tryna be a man</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">E toda vez que te beijo, amor</p>
+        <p class="en">And every time I kiss you, baby</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Posso ouvir o som de algo se quebrando</p>
+        <p class="en">I can hear the sound of breaking down</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Tenho estado confuso ultimamente (sim)</p>
+        <p class="en">I've been confused as of late (yeah)</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Vendo minha juventude escapar (sim)</p>
+        <p class="en">Watching my youth slip away (yeah)</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Você é como o Sol, você me acorda</p>
+        <p class="en">You're like the Sun, you wake me up</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Mas você me desgasta se eu tomar demais</p>
+        <p class="en">But you drain me out if I get too much</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Talvez eu precise de você ou irei desabar</p>
+        <p class="en">I might need you or I'll break</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Somos jovens demais para isso?</p>
+        <p class="en">Are we too young for this?</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Sinto que não posso me mover</p>
+        <p class="en">Feels like I can't move</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando meu coração</p>
+        <p class="en">Sharing my heart</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Isso está acabando comigo</p>
+        <p class="en">It's tearing me apart</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Mas sei que sentiria sua falta, amor, se eu partisse agora mesmo</p>
+        <p class="en">But I know I'd miss you, baby, if I left right now</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Fazendo o que posso, tentando ser um homem</p>
+        <p class="en">Doing what I can, tryna be a man</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">E toda vez que te beijo, amor</p>
+        <p class="en">And every time I kiss you, baby</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Posso ouvir o som de algo se quebrando</p>
+        <p class="en">I can hear the sound of breaking down</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">(Se quebrando, se quebrando, se quebrando)</p>
+        <p class="en">(Breaking down, breaking down, breaking down)</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">(Se quebrando, se quebrando, se quebrando)</p>
+        <p class="en">(Breaking down, breaking down, breaking down)</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Eu não quero interpretar esse papel</p>
+        <p class="en">I don't want to play this part</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Mas interpretarei, tudo por você</p>
+        <p class="en">But I do, all for you</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Não quero dificultar isso</p>
+        <p class="en">I don't want to make this hard</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Mas dificultarei, porque ainda estou</p>
+        <p class="en">But I will 'cause I'm still</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando meu coração</p>
+        <p class="en">Sharing my heart</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Isso está acabando comigo</p>
+        <p class="en">It's tearing me apart</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Mas sei que sentiria sua falta, amor, se eu partisse agora mesmo</p>
+        <p class="en">But I know I'd miss you, baby, if I left right now</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">(Sei que sentiria)</p>
+        <p class="en">(I know I would)</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Fazendo o que posso, tentando ser um homem (ser o seu homem)</p>
+        <p class="en">Doing what I can, tryna be a man (be your man)</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">E toda vez que te beijo, amor</p>
+        <p class="en">And every time I kiss you, baby</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Posso ouvir o som de algo se quebrando</p>
+        <p class="en">I can hear the sound of breaking down</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando minha cama, ooh</p>
+        <p class="en">Sharing my bed, ooh</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando meu pão, sim</p>
+        <p class="en">Sharing my bread, yeah</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando meu pão</p>
+        <p class="en">Sharing my bread</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando minha cabeça</p>
+        <p class="en">Sharing my head</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">(Estou desmoronando)</p>
+        <p class="en">(I'm breaking down)</p>
+      </div>
+
+      <div class="section-break">✦</div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando meu coração</p>
+        <p class="en">Sharing my heart</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando o meu, de repente estou</p>
+        <p class="en">Sharing my, suddenly I'm</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">(Desmoronando)</p>
+        <p class="en">(Breaking down)</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando, já me cansei</p>
+        <p class="en">Sharing, I'm done</p>
+      </div>
+
+      <div class="verse">
+        <p class="pt">Compartilhando minha vida</p>
+        <p class="en">Sharing my life</p>
+      </div>
+
+    </main>
+
+    <footer>
+      <p class="signature">
+        Fernanda
+        <span>sentindo cada verso.</span>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
